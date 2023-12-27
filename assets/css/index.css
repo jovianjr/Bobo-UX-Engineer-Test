@@ -39,7 +39,6 @@ main {
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 0px 20px;
 }
 
 .navbar-brand a {
@@ -104,8 +103,8 @@ main {
 
 /* layout */
 .layout-1-2 {
+  padding: 0 20px;
   height: auto;
-  width: 100%;
   display: none;
   gap: 2em;
 }
@@ -149,6 +148,7 @@ main {
   color: black;
   font-size: 24px;
   font-weight: bold;
+  border-radius: 8px;
 }
 
 .content-1 {
@@ -298,11 +298,22 @@ main {
 
 /* responsive */
 @media only screen and (min-width: 600px) {
+  main {
+    padding: 40px 0;
+  }
+
   .navbar {
+    height: 60px;
     justify-content: start;
+    padding: 0px 20px;
+  }
+
+  .navbar-brand a {
+    font-size: 20px;
   }
 
   .layout-1-2 {
+    padding: 0 20px;
     display: flex;
   }
 
@@ -312,9 +323,40 @@ main {
 
   .layout-3-4 {
     height: auto;
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2em;
+  }
+
+  .content-box {
+    border-radius: 12px;
+  }
+
+  .content-3,
+  .content-4 {
+    min-height: 60svh;
+  }
+
+  .card-product {
+    width: 182px;
+    min-width: 182px;
+  }
+
+  .card-product .card-content .card-action {
+    font-size: 14px;
+    padding: 12px 0px;
+  }
+
+  .slide-back,
+  .slide-next {
+    width: 48px;
+  }
+
+  .footer copyright {
+    font-size: 14px;
+  }
+
+  .footer-content {
+    font-size: 14px;
   }
 }
